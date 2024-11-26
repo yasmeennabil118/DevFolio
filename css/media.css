@@ -1,0 +1,41 @@
+/** md lg xl xxl */
+@media (min-width: 768px) {
+    #home h1 {
+        font-size: 4.5rem;
+    }
+    #home p {
+        font-size: 3rem;
+    }
+    #about .box-shadow,
+    #contact .box-shadow {
+        padding: 4rem 3rem;
+    }
+}
+/** xs sm md lg */
+@media (max-width: 991px) {
+    .navbar-nav {
+        background-color: var(--color-light);
+        margin: 1rem 0;
+        .nav-item {
+            padding: 0.25rem 1rem;
+            .nav-link {
+                color: var(--color-body);
+                font-size: 15px;
+                &.active,
+                &:hover,
+                &.show {
+                    color: var(--color-accent);
+                }
+            }
+        }
+    }
+}
+/** lg xxl */
+@media (min-width: 1200px) {
+    #home,
+    .counter,
+    .feedback,
+    #contact {
+        background-attachment: fixed;
+    }
+}
